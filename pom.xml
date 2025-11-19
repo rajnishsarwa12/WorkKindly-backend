@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -19,6 +21,14 @@
     <properties>
         <java.version>17</java.version>
     </properties>
+
+    <!-- ✅ ADD THIS: JITPACK REPOSITORY (required for nintha library) -->
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <dependencies>
 
@@ -88,11 +98,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- FIXED DEPENDENCY -->
+        <!-- ✅ WORKING WEBP LIBRARY VIA JITPACK -->
         <dependency>
             <groupId>com.github.nintha</groupId>
-            <artifactId>webp-imageio-core</artifactId>
-            <version>0.1.5</version>
+            <artifactId>webp-imageio</artifactId>
+            <version>v0.1.6</version>
         </dependency>
 
     </dependencies>
