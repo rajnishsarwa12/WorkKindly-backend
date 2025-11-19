@@ -1,0 +1,61 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Maven ###
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/*
+mvnw
+mvnw.cmd
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+*.ipr
+*.iws
+
+### Eclipse Files ###
+.project
+.classpath
+.settings/
+bin/
+
+### Logs ###
+*.log
+logs/
+log/
+
+### OS Specific ###
+.DS_Store
+Thumbs.db
+
+### Build Output ###
+/build/
+/out/
+
+### Upload Folder (your project has this) ###
+uploads/
+
+### Environment Config Files ###
+*.env
+.env.*
+application-local.properties
+application-dev.properties
+application-test.properties
+
+### Temporary Files ###
+*.tmp
+*.temp
+
+### System Files ###
+.svn/
+*.swp
+
+### Security ###
+/root/
+/secret/
+/keys/
